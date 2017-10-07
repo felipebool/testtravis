@@ -9,6 +9,7 @@ env:
 # phases
 before_install:
     - mysql -e 'CREATE DATABASE IF NOT EXISTS magento;'
+    - composer install
 
 #install:
 #    - |-
