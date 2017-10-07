@@ -1,0 +1,12 @@
+{
+    "name": "felipebool/testtravis",
+    "authors": [
+        {
+            "name": "Felipe Lopes",
+            "email": "bolzin@gmail.com"
+        }
+    ],
+    "require": {
+        "n98/magerun": "^1.99"
+    }
+}
