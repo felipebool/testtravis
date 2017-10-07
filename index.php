@@ -1,6 +1,8 @@
 <?php
 
-$hello = 'brasil';
+$hello = 'hello, ';
+$world = 'world';
+$message = $hello . $world;
 
-echo 'hello, ' . $hello;
+echo $message;
 
