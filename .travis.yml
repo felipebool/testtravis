@@ -4,7 +4,7 @@ php:
     - '7.1'
 
 env:
-    - TEST=./tests
+    - test_dir=./tests
 
 # phases
 before_install:
@@ -35,7 +35,7 @@ before_install:
 #  - sudo service apache2 restart
 
 script:
-    - phpunit TEST
+    - phpunit $test_dir
 
 # deploy and generate version changelist
 #after_success:
