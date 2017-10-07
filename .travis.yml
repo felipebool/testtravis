@@ -25,9 +25,9 @@ before_install:
 #        --baseUrl="http://localhost/"
 #    - composer install --no-interact
 
-#before_script:
-#  - sudo apt-get update
-#  - sudo apt-get install apache2 libapache2-mod-php
+before_script:
+  - sudo apt-get update
+  - sudo apt-get install apache2 libapache2-mod-php
 
   # configure apache virtual hosts
 #  - sudo cp -f build/travis-ci-apache /etc/apache2/sites-available/default
