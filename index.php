@@ -1,4 +1,6 @@
 <?php
 
-echo 'testtravis 2';
+$hello = 'brasil';
+
+echo 'hello, ' . $hello;
 
