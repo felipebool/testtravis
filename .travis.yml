@@ -10,17 +10,8 @@ before_install:
     - mysql -e 'CREATE DATABASE IF NOT EXISTS magento;'
 
 install:
-    - |-
-        n98-magerun install
-        --dbHost="127.0.0.1"
-        --dbUser="travis"
-        --dbPass=""
-        --dbName="magento"
-        --installSampleData=yes
-        --useDefaultConfigParams=yes
-        --magentoVersionByName="magento-mirror-1.9.3.4"
-        --installationFolder="."
-        --baseUrl="http://localhost/"
+    - echo REFAZENDO O BUILD ----------------------------------------------
+    - n98-magerun install --dbHost="127.0.0.1" --dbUser="travis" --dbPass="" --dbName="magento" --installSampleData=yes --useDefaultConfigParams=yes --magentoVersionByName="magento-mirror-1.9.3.4" --installationFolder="$(pwd)" --baseUrl="http://localhost/"
     - composer install --no-interact
 
 before_script:
