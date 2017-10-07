@@ -3,6 +3,9 @@ language: php
 php:
     - '7.1'
 
+env:
+    - test_dir=./tests
+
 # phases
 before_install:
     - mysql -e 'CREATE DATABASE IF NOT EXISTS magento;'
@@ -36,7 +39,7 @@ before_script:
 #  - sudo service apache2 restart
 
 script:
-    - phpunit
+    - phpunit $test_dir
 
 # deploy and generate version changelist
 #after_success:
