@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Test_Hello>
+            <version>0.1.0</version>
+        </Test_Hello>
+    </modules>
+</config>
+

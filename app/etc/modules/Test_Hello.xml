@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Test_Hello>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Test_Hello>
+    </modules>
+</config>
+

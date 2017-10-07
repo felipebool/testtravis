@@ -1,4 +1,8 @@
 <?php
 
-echo 'testtravis 2';
+$hello = 'hello, ';
+$world = 'world';
+$message = $hello . $world;
+
+echo $message;
 
